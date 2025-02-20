@@ -1,0 +1,426 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                                Surveys of Consumers
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Surveys of Consumers                                              Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID             CASE IDENTIFICATION NUMBER                          1
+      YYYYMM             SURVEY YEAR & MONTH                                 1
+      YYYYQ              SURVEY YEAR & QUARTER                               1
+      YYYY               SURVEY YEAR                                         1
+      ID                 INTERVIEW ID                                        1
+      IDPREV             PREVIOUS ID IN RDD                                  1
+      DATEPR             DATE OF PREVIOUS INTERVIEW                          2
+      PX1Q1              PRICES UP/DOWN NEXT YEAR                            2
+      PX1Q2              PRICES % UP/DOWN NEXT YEAR                          2
+      PX1                PRICE EXPECTATIONS 1YR RECODED                      3
+      PX5Q1              PRICES UP/DOWN NEXT 5 YEARS                         3
+      PX5Q2              PRICES % UP/DOWN NEXT 5 YEARS                       3
+      PX5                PRICE EXPECTATIONS 5YR RECODED                      4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   June 20, 2023
+
+
+
+      Surveys of Consumers                                              Page 1
+
+
+      CASEID             CASE IDENTIFICATION NUMBER
+
+           Data type: numeric
+           Record/columns: 1/1-6
+
+      ________________________________________________________________________
+
+      YYYYMM             SURVEY YEAR & MONTH
+
+           Survey Year & Month
+
+           Data type: numeric
+           Record/columns: 1/8-13
+
+      ________________________________________________________________________
+
+      YYYYQ              SURVEY YEAR & QUARTER
+
+           Survey Year & Quarter
+
+           Data type: numeric
+           Record/columns: 1/15-19
+
+      ________________________________________________________________________
+
+      YYYY               SURVEY YEAR
+
+           Survey Year
+
+           Data type: numeric
+           Record/columns: 1/21-24
+
+      ________________________________________________________________________
+
+      ID                 INTERVIEW ID
+
+           Interview ID
+
+           Data type: numeric
+           Record/columns: 1/26-29
+
+      ________________________________________________________________________
+
+      IDPREV             PREVIOUS ID IN RDD
+
+           Previous ID
+
+           Data type: numeric
+           Record/columns: 1/31-34
+
+
+
+
+
+
+
+                                   June 20, 2023
+
+
+
+      Surveys of Consumers                                              Page 2
+
+
+      DATEPR             DATE OF PREVIOUS INTERVIEW
+
+           Previous Date
+
+           Data type: numeric
+           Record/columns: 1/36-41
+
+      ________________________________________________________________________
+
+      PX1Q1              PRICES UP/DOWN NEXT YEAR
+
+           During the next 12 months, do you think that prices in
+           general will go up, or go down, or stay where they are now?
+
+           VALUE  LABEL
+               1  Go up
+               2  Go up (at same rate)
+               3  Same
+               5  Go down
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 8-*
+           Record/column: 1/43
+
+      ________________________________________________________________________
+
+      PX1Q2              PRICES % UP/DOWN NEXT YEAR
+
+           By about what percent do you expect prices to go (up/down) on
+           the average, during the next 12 months?
+
+           VALUE  LABEL
+              95  95% or more
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 98-*
+           Record/columns: 1/45-46
+
+
+
+
+
+
+
+
+
+
+
+
+                                   June 20, 2023
+
+
+
+      Surveys of Consumers                                              Page 3
+
+
+      PX1                PRICE EXPECTATIONS 1YR RECODED
+
+           Price expectations for next 12 months recoded
+
+           VALUE  LABEL
+             -97  DK how much down
+              96  DK how much up
+              98  DK whether up or down
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: -97,96-*
+           Record/columns: 1/48-50
+
+      ________________________________________________________________________
+
+      PX5Q1              PRICES UP/DOWN NEXT 5 YEARS
+
+           What about the outlook for prices over the next 5 to 10
+           years?  Do you think prices will be higher, about the same,
+           or lower, 5 to 10 years from now?
+
+           VALUE  LABEL
+               1  Go up
+               2  Go up (at same rate)
+               3  Same
+               5  Go down
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 8-*
+           Record/column: 1/52
+
+      ________________________________________________________________________
+
+      PX5Q2              PRICES % UP/DOWN NEXT 5 YEARS
+
+           By about what percent per year do you expect prices to go
+           (up/down) on the average, during the next 5 to 10 years?
+
+           VALUE  LABEL
+              95  95% or more
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 98-*
+           Record/columns: 1/54-55
+
+
+
+
+                                   June 20, 2023
+
+
+
+      Surveys of Consumers                                              Page 4
+
+
+      PX5                PRICE EXPECTATIONS 5YR RECODED
+
+           Price expectations for next 5 years recoded
+
+           VALUE  LABEL
+             -97  DK how much down
+              96  DK how much up
+              98  DK whether up or down
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: -97,96-*
+           Record/columns: 1/57-59
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    PX1   R-squared:                       0.868
+Model:                            OLS   Adj. R-squared:                  0.865
+Method:                 Least Squares   F-statistic:                     282.3
+Date:                Tue, 20 Jun 2023   Prob (F-statistic):           1.65e-20
+Time:                        20:15:12   Log-Likelihood:                -46.620
+No. Observations:                  45   AIC:                             97.24
+Df Residuals:                      43   BIC:                             100.9
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              1.7952      0.172     10.428      0.000       1.448       2.142
+FPCPITOTLZGUSA     0.6411      0.038     16.801      0.000       0.564       0.718
+==============================================================================
+Omnibus:                        9.318   Durbin-Watson:                   1.268
+Prob(Omnibus):                  0.009   Jarque-Bera (JB):                8.472
+Skew:                           0.939   Prob(JB):                       0.0145
+Kurtosis:                       3.994   Cond. No.                         7.71
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         FPCPITOTLZGUSA   R-squared:                       0.868
+Model:                            OLS   Adj. R-squared:                  0.865
+Method:                 Least Squares   F-statistic:                     282.3
+Date:                Tue, 20 Jun 2023   Prob (F-statistic):           1.65e-20
+Time:                        20:15:12   Log-Likelihood:                -63.438
+No. Observations:                  45   AIC:                             130.9
+Df Residuals:                      43   BIC:                             134.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -1.9548      0.363     -5.381      0.000      -2.687      -1.222
+PX1            1.3537      0.081     16.801      0.000       1.191       1.516
+==============================================================================
+Omnibus:                        2.261   Durbin-Watson:                   1.154
+Prob(Omnibus):                  0.323   Jarque-Bera (JB):                2.078
+Skew:                          -0.439   Prob(JB):                        0.354
+Kurtosis:                       2.420   Cond. No.                         11.3
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   June 20, 2023
+The period of analysis from 1986 to 2014 shows a remarkable consistency in the coefficients for both independent variables x1 and x2. x1 remains within the range of 0.02 to 0.14, while x2 shows a little more fluctuation between 0.7 and 0.82.
+
+Throughout the years, the constant coefficient varies between 0.52 and 0.7. The increase in the constant coefficient over the years might indicate that there are other factors not included in the model that have a growing influence over time.
+
+The model shows a decent fit with the R-squared and adjusted R-squared values consistently above 0.68, with the highest being 0.76. This indicates that between 68% and 76% of the variability in the dependent variable can be explained by the model. The consistency of these metrics across the years suggests the relationship between the independent and dependent variables has remained stable.
+
+However, the model's predictive power appears to weaken slightly over time, with the RMSE increasing from 0.4 to 0.43. This suggests the model's prediction errors have increased over time, and the model's predictive accuracy has therefore slightly deteriorated.
+
+In conclusion, while the coefficients and model fit have remained relatively consistent over time, the model's prediction accuracy has slightly decreased. This could suggest the need for additional variables or a different model to better predict future outcomes.
+Intercept or Constant Coefficient (const_coef): This coefficient started at 0.47 in the period 197801-199712 and increased gradually over time, reaching a peak of 1.17 during 198003-200002, then it started decreasing and maintained around 0.6 by 198601-200512. This value represents the expected value of your dependent variable when all independent variables (X1 and X2) are zero.
+
+Coefficient of X1 (x1_coef): The coefficient for X1 began at 0.1, slightly increased over time to reach 0.18 during 198001-199912 to 198003-200002, then began a downward trend. It ended up around 0.11 by the end of the observation period. This shows that for each unit increase in X1, your dependent variable increases by the X1 coefficient value, holding all other variables constant.
+
+Coefficient of X2 (x2_coef): The coefficient for X2 started at 0.8, decreased over time to 0.56 during 198003-200002, then started increasing and ended up around 0.75. This shows that for each unit increase in X2, your dependent variable increases by the X2 coefficient value, holding all other variables constant.
+
+R2 and Adjusted R2: R2 and Adjusted R2 values are consistently high throughout the range of 0.72 to 0.91, indicating that between 72% to 91% of the variance in your dependent variable can be explained by X1 and X2.
+
+RMSE (Root Mean Square Error): RMSE started at 0.63, decreased over time, reaching a low of 0.4 in the period 198505-200504, then slightly increased ending up around 0.41. RMSE is a measure of the differences between values predicted by the model and the values actually observed, lower values of RMSE indicate better fit.
